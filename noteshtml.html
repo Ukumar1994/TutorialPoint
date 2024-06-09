@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="icon" type="icon" href="logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<style>
+    .footer {
+        background-color: #f8f9fa;
+        color: #333;
+        text-align: center;
+        padding: 20px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer img {
+        height: 30px;
+        margin-right: 5px;
+    }
+     .nav{
+        position: fixed;
+     }
+</style>
+
+<body style="background-color: blanchedalmond;">
+
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg fixed-top " style="background-color: rgb(211, 240, 187);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">TUTORIAL POINT</a><img src="logo.png" width="25px" height="25px">&nbsp;&nbsp;&nbsp;&nbsp;
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Courses
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="noteshtml.html">HTML</a></li>
+                            <li><a class="dropdown-item" href="notescss.html">CSS</a></li>
+                            <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">New courses Coming soon..</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Download button -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="HTML-Part-1.pdf" download>Download PDF</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+<center><h1>Html Notes</h1></center>
+    <!-- Html tutorial data -->
+    <div class="container my-5">
+        <div class="accordion" id="accordionExample1">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Introduction to HTML
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h2>Introduction to HTML</h2>
+            <p>HTML stands for HyperText Markup Language. It is the standard markup language for creating web pages.</p>
+            <p>Example:</p>
+            <pre>
+                <code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;Page Title&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+
+                        &lt;h1&gt;This is a Heading&lt;/h1&gt;
+                        &lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code>
+            </pre>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Description of HTML Example
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                    <div class="accordion-body">
+                        
+                            <img src="description.png">
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Features of HTML
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample3">
+                    <div class="accordion-body"><pre>
+                        1) It is a very easy and simple language. It can be easily understood and modified.
+                        2) It is very easy to make an effective presentation with HTML because it has a lot of
+                        formatting tags.
+                        3) It is a markup language, so it provides a flexible way to design web pages along with
+                        the text.
+                        4) It facilitates programmers to add a link on the web pages (by html anchor tag), so it
+                        enhances the interest of browsing of the user.
+                        5) It is platform-independent because it can be displayed on any platform like
+                        Windows, Linux, and Macintosh, etc.
+                        6) It facilitates the programmer to add Graphics, Videos, and Sound to the web pages
+                        which makes it more attractive and interactive.
+                        7) HTML is a case-insensitive language, which means we can use tags either in lowercase or upper-case.`</pre>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion" id="accordionExample4">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                        Html with TextEditor
+                    </button>
+                </h2>
+                <div id="collapsefour" class="accordion-collapse collapse " data-bs-parent="#accordionExample4">
+                    <div class="accordion-body">
+                        <pre>
+                            <ol>
+                                <li>An HTML file is a text file, so to create an HTML file we can use any text editors.</li>
+                                <li>Text editors are the programs which allow editing in a written text, hence to create a web page we need to write our code in some text editor.</li>
+                                <li>There are various types of text editors available which you can directly download, but for a beginner, the best text editor is Notepad (Windows) or TextEdit (Mac).</li>
+                                <li>After learning the basics, you can easily use other professional text editors which are, Notepad++, Sublime Text, Vim, etc.</li>
+                                <li>In our tutorial, we will use Notepad and Sublime Text editor. Following are some easy ways to create your first web page with Notepad and Sublime Text.</li>
+                            </ol>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        HTML code with Notepad
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample5">
+                    <div class="accordion-body">
+                        Notepad is a simple text editor and suitable for beginners to learn HTML. It is available
+in all versions of Windows, from where you easily access it.
+Step 1: Open Notepad (Windows.<br><br>
+<img src="notepad1.png">
+<img src="notepad2.png">
+<img src="notepad3.png"><br><br>
+<strong>Step 4: Open the HTML page in your web browser.</strong>
+<p>To run the HTML page, you need to open the file location, where you have saved the file
+and then either double-click on file or click on open with option</p>
+<img src="notepad4.png">
+<img src="notepad5.png">
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+                        Building blocks of Html
+                    </button>
+                </h2>
+                <div id="collapsesix" class="accordion-collapse collapse" data-bs-parent="#accordionExample6">
+                    <div class="accordion-body">
+                       <pre>
+ An HTML document consist of its basic building blocks which are:
+ <ol>
+    <li>Tags: An HTML tag surrounds the content and apply meaning to it. It is written between
+        < and > brackets.</li>
+        <li>Attribute: An attribute in HTML provides extra information about the element, and it is
+            applied within the start tag. An HTML attribute contains two fields: name & value.
+          </li>
+ </ol>
+
+                       </pre>
+                       <img src="buildingblock.png" >
+                       <img src="buildingblockexample.png" >
+                       <img src="buildingblockexampleout.png" >
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven">
+                        New Topics Coming Soon
+                    </button>
+                </h2>
+                <div id="collapseseven" class="accordion-collapse collapse" data-bs-parent="#accordionExample7">
+                    <div class="accordion-body">
+                        <strong>New Topics coming Soon.</strong> Please attention this webpage is only for example.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <img src="logo.png" alt="Logo">
+            <span>&copy; 2024 My Website. All rights reserved. <br> &nbsp;&nbsp;&nbsp;&nbsp;Developed by Mr. Upender Kumar.</span>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

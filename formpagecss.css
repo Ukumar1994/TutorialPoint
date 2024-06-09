@@ -1,0 +1,12 @@
+
+marquee{
+    color: #e74eaf;
+    
+}
+body{
+    background-color: aliceblue;
+}
+a ul li{
+    
+    display: inline-block;
+} 

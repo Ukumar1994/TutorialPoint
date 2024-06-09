@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutorial Point</title>
+  <link rel="icon" type="icon" href="logo.png">
+  <link rel="stylesheet" href="formpagecss.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    /* body {
+      padding-top: 56px;}
+      /* Adjust this value if your navbar height is different */
+    */
+    body {
+        padding-top: 56px; /* Adjust this value if your navbar height is different */
+    }
+    /* Adjusted style for the navbar */
+    .navbar {
+        padding-top: 10px; /* Added padding-top directly to the navbar */
+    }
+
+    h3 {
+      font-family: Calibri;
+      font-size: 25pt;
+      font-style: normal;
+      font-weight: bold;
+      color: rgb(37, 36, 44);
+      text-align: center;
+      text-decoration: underline;
+    }
+    
+
+    table {
+      font-family: Calibri;
+      color: rgb(249, 247, 247);
+      font-size: 11pt;
+      font-style: normal;
+      font-weight: bold;
+      background-color: rgb(104, 82, 245);
+      border-collapse: collapse;
+      border: 2px solid navy;
+    }
+
+    table.inner {
+      border: 0px;
+    }
+
+    .cards-list {
+      z-index: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      margin: 15px ;
+      width: 300px;
+      height: 300px;
+      border-radius: 40px;
+      box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+      cursor: pointer;
+      transition: 0.4s;
+    }
+
+    .card .card_image {
+      width: inherit;
+      height: inherit;
+      border-radius: 40px;
+    }
+
+    .card .card_image img {
+      width: inherit;
+      height: inherit;
+      border-radius: 40px;
+      object-fit: 100%;
+    }
+
+    .card .card_title {
+      text-align: center;
+      border-radius: 0px 0px 40px 40px;
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 30px;
+      margin-top: -80px;
+      height: 40px;
+    }
+
+    .card:hover {
+      transform: scale(0.9, 0.9);
+      box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+        -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+    }
+
+    .title-white {
+      color: white;
+    }
+
+    .title-black {
+      color: black;
+    }
+
+    @media all and (max-width: 500px) {
+      .card-list {
+        flex-direction: column;
+      }
+    }
+     /* Footer styles */
+     .footer {
+        background-color: #f8f9fa;
+        color: #333;
+        text-align: center;
+        padding: 20px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer img {
+        height: 30px;
+        margin-right: 5px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!--nav bar-->
+  <nav class="navbar navbar-expand-lg fixed-top" style="background-color: rgb(211, 240, 187);" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">TUTORIAL POINT</a><img src="logo.png" width="25px" height="25px">&nbsp;&nbsp;&nbsp;&nbsp;
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Courses
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="noteshtml.html" target="_blank">HTML</a></li>
+              <li><a class="dropdown-item" href="notescss.html">CSS</a></li>
+              <li><a class="dropdown-item" href="notesjavascript.html">JavaScript</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">New courses Coming soon..</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://utech.infinityfreeapp.com/">Developer</a>
+          </li>
+        </ul>
+        <a href="registrationpage.html">New Registration</a>&nbsp;
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <br><br>
+  <!-- menu bar -->
+  <ul class="nav justify-content-center" style="background-color: azure;">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="noteshtml.html">Html</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="notescss.html">Css</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="notesjavascript.html">JavaScript</a>
+    </li>
+  </ul>
+<br>
+<!-- MARQUEE DESIGN -->
+ <marquee  width="100%" behavior="alternate">
+<div class="marquee-container">
+  <div class="marquee">
+      <strong>New registration is going on, please fill the registration form....</strong>
+      <a href="registrationpage.html">click here</a>
+  </div>
+</div>
+</marquee>
+  <!-- card design for courses -->
+  <div class="cards-list">
+<a href="notesjavascript.html" target="_blank">
+    <div class="card 1">
+      <div class="card_image"><img src="htmlcssjs" /> </div>
+      <div class="card_title title-white">
+      
+      </div>
+    </div>
+</a>
+    <a href="noteshtml.html" target="_blank">
+      <div class="card 2">
+        <div class="card_image">
+          <img src="imagehtml.gif" />
+        </div>
+        <div class="card_title title-white">
+          <p style="color: rgb(20, 142, 16);">Notes.. click here</p>
+        </div>
+      </div>
+    </a>
+    <a href="notescss.html" target="_blank">
+      <div class="card 3">
+        <div class="card_image">
+          <img src="cssimage.gif" />
+        </div>
+        <div class="card_title">
+          <p style="color: yellow;">Notes.. click here</p>
+        </div>
+      </div>
+    </a>
+
+    <div class="card 4">
+      <div class="card_image">
+        <img src="https://media.giphy.com/media/LwIyvaNcnzsD6/giphy.gif" />
+      </div>
+      <div class="card_title title-black">
+        <p>New Course coming soon..</p>
+      </div>
+    </div>
+
+  </div>
+
+ 
+
+  <!-- footer -->
+  <!-- some skill india photo -->
+  <!-- <a href="https://admin.skillindiadigital.gov.in/login" target="_blank"><img src="formdesign1.png" height="100px"
+      width="100%"></a> -->
+      <footer class="footer">
+        <div class="container">
+          <img src="logo.png">
+            <span>&copy; 2024 My Website. All rights reserved. <br> &nbsp;&nbsp;&nbsp;&nbsp;Developed by Mr. Upender Kumar.</span>
+        </div>
+    </footer>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
